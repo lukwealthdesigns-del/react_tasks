@@ -1,0 +1,14 @@
+function Header() {
+    return(
+        <div>
+            <h1>My React App</h1>
+            <nav>
+                <a href="#Home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    );
+}
+
+export default Header;
