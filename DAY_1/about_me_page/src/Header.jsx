@@ -1,8 +1,10 @@
 function Header() {
     return(
-        <div>
-            <p>My Name is Ibrahim Lukman, an aspiring AI Developer from Abeokuta.</p>
-        </div>
+        <header>
+            <h1>Ibrahim Lukman</h1>
+            <p className="tag">"an aspiring AI Developer from Abeokuta."</p>
+            
+        </header>
     );
 }
 

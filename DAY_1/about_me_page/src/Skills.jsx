@@ -1,6 +1,6 @@
 function Skills() {
     return(
-        <div>
+        <div className="skills">
             <p>Here are my skills</p>
             <ul>
                 <li>Python</li>

@@ -5,9 +5,9 @@ function App() {
   
 
   return (
-    <dvi>
+    <div>
       <MainContent />
-    </dvi>
+    </div>
   )
 }
 

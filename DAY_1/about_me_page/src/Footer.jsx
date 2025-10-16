@@ -1,6 +1,6 @@
 function Footer() {
     return(
-        <div>
+        <div className="footer">
             <p>You can follow me on my social media handles to check my works.</p>
             <nav>
                 <a href="#">Twitter</a>
