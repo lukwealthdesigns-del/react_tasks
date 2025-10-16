@@ -3,7 +3,7 @@ function Header() {
         <div className="header">
             <h1>My React App</h1>
             <nav>
-                <a href="#Home">Home</a>
+                <a className="home" href="#Home">Home</a>
                 <a href="#about">About</a>
                 <a href="#contact">Contact</a>
             </nav>

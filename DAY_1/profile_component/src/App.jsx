@@ -6,8 +6,7 @@ function App() {
 
   return (
     <div>
-      <Profile />
-      <Profile />
+      <Profile/>
     </div>
     
   )

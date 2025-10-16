@@ -1,8 +1,9 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 .logo {
@@ -45,4 +46,48 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+} */
+
+
+#root {
+  background-color: rgb(6, 71, 71);
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.whole{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav{
+  display: flex;
+  gap: 30px;
+  color: white;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a :hover{
+  text-decoration: underline;
+}
+
+
+.home{
+  color: rgb(25, 255, 25);
+  text-decoration: underline;
 }
