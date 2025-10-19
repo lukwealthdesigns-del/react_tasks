@@ -1,7 +1,9 @@
 function ProfileStats({ projects, followers, following }) {
     return (
-        <div>
-
+        <div className="profileStats">
+            <div>Projects: {projects}</div>
+            <div>Followers: {followers}</div>
+            <div>Following: {following}</div>
         </div>
     )
 }

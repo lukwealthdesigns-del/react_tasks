@@ -14,6 +14,31 @@ function App() {
       name="Ibrahim Lukman"
       title="AI Developer"
       />
+
+      <ProfileStats
+      projects="100"
+      followers="10.7M"
+      following="1.7K"
+      />
+
+      <div className='skillBadgeCont'>
+        <SkillBadge
+        skill="HTML & CSS"
+        level="Expert"
+        />
+
+        <SkillBadge
+        skill="Javascript"
+        level="Intermediate"
+        />
+
+        <SkillBadge
+        skill="React"
+        level="Beginner"
+        />
+  
+      </div>
+      
       
     </div>
   )
