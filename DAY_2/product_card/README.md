@@ -1,3 +1,3 @@
 ### PRODUCT CARD
 
-![Product Card](img width="1857" height="908" alt="Image" src="https://github.com/user-attachments/assets/df78e1d0-e8e3-4ed7-904f-9cb7c2fee775)
+![Product Card](https://github.com/user-attachments/assets/df78e1d0-e8e3-4ed7-904f-9cb7c2fee775)
