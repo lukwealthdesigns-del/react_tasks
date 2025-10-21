@@ -1,7 +1,7 @@
 import ProfileHeader from './ProfileHeader'
 import ProfileStats from './ProfileStats'
 import SkillBadge from './SkillBadge'
-import ProductCard from '../../product_card/src/ProductCard'
+import ProfileCard from './ProfileCard'
 import './App.css'
 
 function App() {
@@ -38,6 +38,10 @@ function App() {
         />
   
       </div>
+
+      <ProfileCard 
+      
+      />
       
       
     </div>
