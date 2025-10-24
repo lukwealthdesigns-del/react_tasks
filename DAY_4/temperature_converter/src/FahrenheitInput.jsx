@@ -1,16 +1,3 @@
-
-// function FarenheitInput({ farenheit, setFarenheit }) {
-    
-
-//     return(
-//         <input value={farenheit} onChange={(e) => setFarenheit(e.target.value)} placeholder="farenheit"></input>
-//     )
-// }
-
-// export default FarenheitInput;
-
-
-
 function FahrenheitInput({ value, onChange }) {
   return (
     <div>
