@@ -4,24 +4,23 @@ import TodoList from "./TodoList";
 import TodoFilter from "./TodoFilter";
 
 function TodoApp() {
-  // 1️⃣ State for all todos
+ 
   const [todos, setTodos] = useState([]);
 
-  // 2️⃣ State for the filter type (all, active, completed)
   const [filter, setFilter] = useState("all");
 
-  // Add new todo
+  
   function addTodo(text) {
-    if (text.trim() === "") return; // ignore empty input
+    if (text.trim() === "") return; 
     const newTodo = {
-      id: Date.now(), // unique id
+      id: Date.now(),
       text,
       completed: false,
     };
     setTodos([...todos, newTodo]);
   }
 
-  // Toggle completed
+  
   function toggleTodo(id) {
     const updated = todos.map((todo) =>
       todo.id === id ? { ...todo, completed: !todo.completed } : todo
@@ -29,26 +28,26 @@ function TodoApp() {
     setTodos(updated);
   }
 
-  // Delete todo
+
   function deleteTodo(id) {
     const updated = todos.filter((todo) => todo.id !== id);
     setTodos(updated);
   }
 
-  // Clear all completed
+
   function clearCompleted() {
     const activeTodos = todos.filter((todo) => !todo.completed);
     setTodos(activeTodos);
   }
 
-  // Apply current filter
+
   const filteredTodos = todos.filter((todo) => {
     if (filter === "active") return !todo.completed;
     if (filter === "completed") return todo.completed;
-    return true; // all
+    return true; 
   });
 
-  // Count stats
+
   const total = todos.length;
   const completed = todos.filter((t) => t.completed).length;
 

@@ -12,7 +12,7 @@ function TodoInput({ onAdd }) {
     <div>
       <input
         type="text"
-        placeholder="Add new todo..."
+        placeholder="Add new todo"
         value={text}
         onChange={(e) => setText(e.target.value)}
       />

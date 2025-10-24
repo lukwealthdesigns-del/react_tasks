@@ -9,7 +9,7 @@ function TodoList({ todos, onToggle, onDelete }) {
             onChange={() => onToggle(todo.id)}
           />
           {todo.completed ? <s>{todo.text}</s> : todo.text}
-          <button onClick={() => onDelete(todo.id)}>❌</button>
+          <button onClick={() => onDelete(todo.id)}>cancel</button>
         </li>
       ))}
     </ul>
