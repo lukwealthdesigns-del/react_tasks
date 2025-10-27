@@ -1,0 +1,22 @@
+function CategoryFilter({ currentFilter, onFilterChange }) {
+  const categories = ['All', 'Food', 'Transport', 'Bills', 'Entertainment', 'Others']
+
+  return (
+    <div className="category-filter">
+      <h3>Filter by Category:</h3>
+      <div className="filter-buttons">
+        {categories.map((category) => (
+          <button
+            key={category}
+            className={`filter-btn ${currentFilter === category ? 'active' : ''}`}
+            onClick={() => onFilterChange(category)}
+          >
+            {category}
+          </button>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+export default CategoryFilter
