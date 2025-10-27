@@ -1,33 +1,33 @@
 import { useState } from 'react'
 
 function AddExpenseForm({ onAddExpense }) {
-  // STATE: Form input values
+
   const [description, setDescription] = useState('')
   const [amount, setAmount] = useState('')
   const [category, setCategory] = useState('Food')
 
   const handleSubmit = (e) => {
-    e.preventDefault() // Prevents page refresh
+    e.preventDefault() 
     
-    // Validation: Don't allow empty or zero
+
     if (!description.trim() || !amount || parseFloat(amount) <= 0) {
       alert('Please fill all fields correctly!')
       return
     }
 
-    // Create new expense object
+
     const newExpense = {
-      id: Date.now(), // Simple unique id using timestamp
+      id: Date.now(), 
       description: description,
       amount: parseFloat(amount),
       category: category,
-      date: new Date().toISOString().split('T')[0] // Today's date in YYYY-MM-DD format
+      date: new Date().toISOString().split('T')[0] 
     }
 
-    // Send to parent
+
     onAddExpense(newExpense)
 
-    // Clear form
+
     setDescription('')
     setAmount('')
     setCategory('Food')

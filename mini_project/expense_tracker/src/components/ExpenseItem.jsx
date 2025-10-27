@@ -1,10 +1,10 @@
 import { useState } from 'react'
 
 function ExpenseItem({ expense, onDelete, onEdit }) {
-  // State to track if we're editing
+
   const [isEditing, setIsEditing] = useState(false)
   
-  // State for edited values
+
   const [editedDescription, setEditedDescription] = useState(expense.description)
   const [editedAmount, setEditedAmount] = useState(expense.amount)
 
@@ -17,13 +17,13 @@ function ExpenseItem({ expense, onDelete, onEdit }) {
   }
 
   const handleSave = () => {
-    // Validate
+
     if (!editedDescription.trim() || editedAmount <= 0) {
       alert('Please enter valid values!')
       return
     }
 
-    // Send updated data to parent
+
     onEdit(expense.id, {
       description: editedDescription,
       amount: parseFloat(editedAmount)
@@ -33,7 +33,7 @@ function ExpenseItem({ expense, onDelete, onEdit }) {
   }
 
   const handleCancel = () => {
-    // Reset to original values
+
     setEditedDescription(expense.description)
     setEditedAmount(expense.amount)
     setIsEditing(false)

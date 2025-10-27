@@ -1,16 +1,15 @@
 function ExpenseStats({ expenses }) {
-  // Calculate total amount spent
+
   const totalAmount = expenses.reduce((sum, expense) => sum + expense.amount, 0)
   
-  // Count number of expenses
+
   const expenseCount = expenses.length
   
-  // Find highest expense
+
   const highestExpense = expenses.length > 0 
     ? Math.max(...expenses.map(e => e.amount))
     : 0
-  
-  // Calculate spending by category
+
   const categoryTotals = {}
   expenses.forEach(expense => {
     if (categoryTotals[expense.category]) {
@@ -22,10 +21,10 @@ function ExpenseStats({ expenses }) {
 
   return (
     <div className="expense-stats">
-      <h2>📊 Your Spending Statistics</h2>
+      <h2>Your Spending Statistics</h2>
       
       <div className="stats-grid">
-        {/* Total Amount Card */}
+        {}
         <div className="stat-card total">
           <div className="stat-icon">💰</div>
           <div className="stat-info">
@@ -34,7 +33,7 @@ function ExpenseStats({ expenses }) {
           </div>
         </div>
 
-        {/* Expense Count Card */}
+        {}
         <div className="stat-card count">
           <div className="stat-icon">📝</div>
           <div className="stat-info">
@@ -43,7 +42,7 @@ function ExpenseStats({ expenses }) {
           </div>
         </div>
 
-        {/* Highest Expense Card */}
+        {}
         <div className="stat-card highest">
           <div className="stat-icon">🔥</div>
           <div className="stat-info">
@@ -53,7 +52,7 @@ function ExpenseStats({ expenses }) {
         </div>
       </div>
 
-      {/* Category Breakdown */}
+      {}
       {Object.keys(categoryTotals).length > 0 && (
         <div className="category-breakdown">
           <h3>Spending by Category</h3>
