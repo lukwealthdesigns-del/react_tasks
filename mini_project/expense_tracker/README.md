@@ -1,3 +1,4 @@
-## Expense Tracker
+## Wealth Expense Tracker
 
-![Expense Tracker](https://github.com/user-attachments/assets/5f1d0d5f-4e5c-4a53-a588-473c3d6041b7)
+![](https://github.com/user-attachments/assets/2f2f3a1d-4358-4dfd-8642-c61f0ff5a07e)
+![](https://github.com/user-attachments/assets/6bc0e722-cb2d-4807-86ac-b45236661069)

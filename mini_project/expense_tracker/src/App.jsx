@@ -1,13 +1,14 @@
-import NewApp from './NewApp'
-
+import Parent from "./components/Parent";
+import './ExpenseTracker.css';
 
 function App() {
+  
 
   return (
     <div>
-      <NewApp/>
+      <Parent/>
     </div>
-  )
+  );
 }
 
 export default App;

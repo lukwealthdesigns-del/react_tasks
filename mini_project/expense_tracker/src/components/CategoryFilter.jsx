@@ -1,22 +1,26 @@
 function CategoryFilter({ currentFilter, onFilterChange }) {
-  const categories = ['All', 'Food', 'Transport', 'Bills', 'Entertainment', 'Others']
-
+  const categories = [
+    { key: 'all', label: 'All' },
+    { key: 'Food', label: 'Food' },
+    { key: 'Transport', label: 'Transport' },
+    { key: 'Bills', label: 'Bills' },
+    { key: 'Entertainment', label: 'Entertainment' },
+    { key: 'Others', label: 'Others' }
+  ];
+  
   return (
     <div className="category-filter">
-      <h3>Filter by Category:</h3>
-      <div className="filter-buttons">
-        {categories.map((category) => (
-          <button
-            key={category}
-            className={`filter-btn ${currentFilter === category ? 'active' : ''}`}
-            onClick={() => onFilterChange(category)}
-          >
-            {category}
-          </button>
-        ))}
-      </div>
+      {categories.map(cat => (
+        <button
+          key={cat.key}
+          className={`filter-btn ${currentFilter === cat.key ? 'active' : ''} ${cat.key.toLowerCase()}`}
+          onClick={() => onFilterChange(cat.key)}
+        >
+          {cat.label}
+        </button>
+      ))}
     </div>
-  )
+  );
 }
 
-export default CategoryFilter
+export default CategoryFilter;

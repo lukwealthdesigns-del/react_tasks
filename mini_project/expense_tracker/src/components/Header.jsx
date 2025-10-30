@@ -4,14 +4,14 @@ function Header() {
     year: 'numeric',
     month: 'long',
     day: 'numeric'
-  })
-
+  });
+  
   return (
     <header className="header">
-      <h1>My Expense Tracker</h1>
-      <p className="date">{today}</p>
+      <h1>Wealth Expense Tracker</h1>
+      <p>{today}</p>
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;
